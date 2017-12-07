@@ -1,0 +1,47 @@
+buildscript {
+  repositories {
+    mavenCentral()
+    maven {
+      url 'http://repo.jenkins-ci.org/releases/'
+    }
+  }
+  dependencies {
+    classpath 'org.jenkins-ci.tools:gradle-jpi-plugin:0.24.0'
+  }
+}
+
+plugins {
+  id "org.jenkins-ci.jpi" version "0.24.0"
+}
+
+apply plugin: 'jpi'
+group = "org.jenkins-ci.plugins"
+version = "1.4.1-SNAPSHOT"
+
+jenkinsPlugin {
+  coreVersion = '2.60.3'
+  displayName = "Page Decoration"
+  gitHubUrl = "https://github.com/covermymeds/jenkins-page-decoration"
+  shortName = "page-decoration"
+  fileExtension = 'jpi'
+
+  developers {
+    developer {
+      id "tvon"
+      name "Tom von Schwerdtner"
+      email "tvon@covermymeds.com"
+    }
+  }
+
+  dependencies {
+    optionalJenkinsPlugins 'org.jenkins-ci.plugins:matrix-project:1.4.1@jar'
+  }
+}
+
+dependencies {
+  compile group: 'cglib', name: 'cglib-nodep', version: '3.1'
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '3.1'
+}

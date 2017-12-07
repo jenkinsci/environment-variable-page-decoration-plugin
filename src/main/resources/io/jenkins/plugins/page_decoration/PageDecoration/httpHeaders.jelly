@@ -1,0 +1,4 @@
+<j:jelly xmlns:j="jelly:core">
+  <j:if test="${it.httpHeadersExtra != null}">${it.httpHeadersExtra}</j:if>
+</j:jelly>
+
