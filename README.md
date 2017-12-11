@@ -1,4 +1,6 @@
-# Jenkins Page Decoration
+# Jenkins Page Decoration Plugin
+
+https://wiki.jenkins.io/display/JENKINS/Page+Decoration+Plugin
 
 Use API exposed by PageDecorator to inject environent variables into Jenkins Pages.
 
