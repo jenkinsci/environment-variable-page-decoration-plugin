@@ -21,7 +21,7 @@ version = "1.4.1-SNAPSHOT"
 jenkinsPlugin {
   coreVersion = '2.60.3'
   displayName = "Page Decoration"
-  gitHubUrl = "https://github.com/covermymeds/jenkins-page-decoration"
+  gitHubUrl = "https://github.com/jenkinsci/page-decoration-plugin"
   shortName = "page-decoration"
   fileExtension = 'jpi'
 
