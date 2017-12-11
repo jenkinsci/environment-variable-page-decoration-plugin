@@ -16,7 +16,7 @@ plugins {
 
 apply plugin: 'jpi'
 group = "org.jenkins-ci.plugins"
-version = "1.4.1-SNAPSHOT"
+version = "1.0.0"
 
 jenkinsPlugin {
   coreVersion = '2.60.3'
@@ -31,10 +31,6 @@ jenkinsPlugin {
       name "Tom von Schwerdtner"
       email "tvon@covermymeds.com"
     }
-  }
-
-  dependencies {
-    optionalJenkinsPlugins 'org.jenkins-ci.plugins:matrix-project:1.4.1@jar'
   }
 }
 
