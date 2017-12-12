@@ -1,8 +1,8 @@
-# Jenkins Page Decoration Plugin
+# Jenkins Environment Variable Page Decoration Plugin
 
-https://wiki.jenkins.io/display/JENKINS/Page+Decoration+Plugin
+https://wiki.jenkins.io/display/JENKINS/Environment+Variable+Page+Decoration+Plugin
 
-Use API exposed by PageDecorator to inject environent variables into Jenkins Pages.
+Pretty much what it says on the tin.  Use API exposed by PageDecorator to inject environent variables into Jenkins Pages.
 
 This is targetted at systems that are deployed via some automated means, there
 is no UI for configuration.
