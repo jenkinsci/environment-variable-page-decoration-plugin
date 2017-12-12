@@ -21,8 +21,8 @@ version = "1.0.0"
 jenkinsPlugin {
   coreVersion = '2.60.3'
   displayName = "Page Decoration"
-  gitHubUrl = "https://github.com/jenkinsci/page-decoration-plugin"
-  shortName = "page-decoration"
+  gitHubUrl = "https://github.com/jenkinsci/environment-variable-page-decoration-plugin"
+  shortName = "environment-variable-page-decoration"
   fileExtension = 'jpi'
 
   developers {
