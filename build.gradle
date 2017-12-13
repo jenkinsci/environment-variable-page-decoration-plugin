@@ -17,10 +17,11 @@ plugins {
 apply plugin: 'jpi'
 group = "org.jenkins-ci.plugins"
 version = "1.0.0"
+description = "Use Environment Variables to insert content into Jenkins Pages via the PageDecorator API"
 
 jenkinsPlugin {
   coreVersion = '2.60.3'
-  displayName = "Page Decoration"
+  displayName = "Env Variable Page Decoration"
   gitHubUrl = "https://github.com/jenkinsci/environment-variable-page-decoration-plugin"
   shortName = "environment-variable-page-decoration"
   fileExtension = 'jpi'
