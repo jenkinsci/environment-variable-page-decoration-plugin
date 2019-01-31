@@ -6,17 +6,17 @@ buildscript {
     }
   }
   dependencies {
-    classpath 'org.jenkins-ci.tools:gradle-jpi-plugin:0.24.0'
+    classpath 'org.jenkins-ci.tools:gradle-jpi-plugin:0.29.0'
   }
 }
 
 plugins {
-  id "org.jenkins-ci.jpi" version "0.24.0"
+  id "org.jenkins-ci.jpi" version "0.29.0"
 }
 
 apply plugin: 'jpi'
 group = "org.jenkins-ci.plugins"
-version = "1.0.1"
+version = "1.1.0"
 description = "Use Environment Variables to insert content into Jenkins Pages via the PageDecorator API"
 
 jenkinsPlugin {
@@ -37,8 +37,4 @@ jenkinsPlugin {
 
 dependencies {
   compile group: 'cglib', name: 'cglib-nodep', version: '3.1'
-}
-
-task wrapper(type: Wrapper) {
-  gradleVersion = '3.1'
 }
