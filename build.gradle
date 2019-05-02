@@ -23,7 +23,3 @@ jenkinsPlugin {
     }
   }
 }
-
-dependencies {
-  compile group: 'cglib', name: 'cglib-nodep', version: '3.1'
-}
