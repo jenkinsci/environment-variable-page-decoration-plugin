@@ -1,4 +1,4 @@
 buildPlugin(
-    tests: { skip: true },
-    configurations: buildPlugin.recommendedConfigurations()
+  tests: [ skip: true ],
+  configurations: buildPlugin.recommendedConfigurations()
 )
