@@ -1,26 +1,20 @@
-buildscript {
-  repositories {
-    mavenCentral()
-    maven {
-      url 'http://repo.jenkins-ci.org/releases/'
-    }
-  }
-  dependencies {
-    classpath 'org.jenkins-ci.tools:gradle-jpi-plugin:0.24.0'
-  }
-}
-
 plugins {
-  id "org.jenkins-ci.jpi" version "0.24.0"
+  id 'org.jenkins-ci.jpi' version '0.31.0'
 }
 
 apply plugin: 'jpi'
+
 group = "org.jenkins-ci.plugins"
-version = "1.0.1"
+version = "1.2.0"
 description = "Use Environment Variables to insert content into Jenkins Pages via the PageDecorator API"
 
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
 jenkinsPlugin {
-  coreVersion = '2.60.3'
+  coreVersion = '2.150.3'
   displayName = "Env Variable Page Decoration"
   gitHubUrl = "https://github.com/jenkinsci/environment-variable-page-decoration-plugin"
   shortName = "environment-variable-page-decoration"
@@ -33,12 +27,4 @@ jenkinsPlugin {
       email "tvon@covermymeds.com"
     }
   }
-}
-
-dependencies {
-  compile group: 'cglib', name: 'cglib-nodep', version: '3.1'
-}
-
-task wrapper(type: Wrapper) {
-  gradleVersion = '3.1'
 }

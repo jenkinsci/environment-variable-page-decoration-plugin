@@ -1,3 +1,3 @@
 <j:jelly xmlns:j="jelly:core">
-  <j:if test="${it.headerExtra != null}">${it.headerExtra}</j:if>
+  <j:if test="${it.headerExtra != null}"><j:out value="${it.headerExtra}"/></j:if>
 </j:jelly>
