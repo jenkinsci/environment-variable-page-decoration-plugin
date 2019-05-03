@@ -28,3 +28,7 @@ jenkinsPlugin {
     }
   }
 }
+
+dependencies {
+  jenkinsPlugins("io.jenkins.blueocean:blueocean-web:1.2.4")
+}
