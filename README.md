@@ -20,7 +20,7 @@ You can set the following environment variables:
 
 ## Example
 
-Set some environment variables:
+This would be handled by your deploy tooling, but for the sake of a walkthrough (and something you can run locally with docker) you can set some environment variables:
 
 ```
 export DEPLOY_TIME=$(date)
