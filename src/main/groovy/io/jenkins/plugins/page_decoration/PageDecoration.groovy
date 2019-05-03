@@ -11,7 +11,6 @@ class PageDecoration extends PageDecorator {
     if(System.getenv('JENKINS_FOOTER_EXTRA_B64')){
       return decodeB64(jenkinsFooterExtra)
     }
-    println(jenkinsFooterExtra)
     return jenkinsFooterExtra
   }
 
@@ -20,7 +19,6 @@ class PageDecoration extends PageDecorator {
     if(System.getenv('JENKINS_HEADER_EXTRA_B64')){
       return decodeB64(jenkinsHeaderExtra)
     }
-    println(jenkinsHeaderExtra)
     return jenkinsHeaderExtra
   }
 
