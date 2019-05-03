@@ -17,6 +17,8 @@ You can set the following environment variables:
 * `JENKINS_FOOTER_EXTRA_B64` - If this is set, then `JENKINS_FOOTER_EXTRA` is base64 decoded.
 * `JENKINS_HEADER_EXTRA` - Add content in the page `head` tags (e.g., css or javascript tags).
 * `JENKINS_HEADER_EXTRA_B64` - If this is set, then `JENKINS_HEADER_EXTRA` is base64 decoded.
+* `JENKINS_BLUE_EADER_EXTRA` - Add content in the BlueOcean page `head` tags (e.g., css or javascript tags).
+* `JENKINS_BLUE_EADER_EXTRA_B64` - If this is set, then `JENKINS_BLUE_HEADER_EXTRA` is base64 decoded.
 
 ## Example
 
