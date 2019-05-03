@@ -5,7 +5,7 @@ plugins {
 apply plugin: 'jpi'
 
 group = "org.jenkins-ci.plugins"
-version = "1.1.0"
+version = "1.2.0"
 description = "Use Environment Variables to insert content into Jenkins Pages via the PageDecorator API"
 
 java {
