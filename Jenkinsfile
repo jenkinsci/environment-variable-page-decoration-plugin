@@ -1,3 +1,1 @@
-buildPlugin(
-  tests: [ skip: true ]
-)
+buildPluginWithGradle(tests: [skip: true])
